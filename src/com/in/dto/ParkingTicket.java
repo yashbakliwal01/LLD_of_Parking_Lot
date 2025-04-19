@@ -57,5 +57,4 @@ public class ParkingTicket {
     	return (int) Duration.between(this.timestamp, exitTme).toHours();
     }
     
-    
 }

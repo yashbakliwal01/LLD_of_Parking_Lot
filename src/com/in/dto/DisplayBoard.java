@@ -14,6 +14,7 @@ public class DisplayBoard {
 		this.freeParkingSpots = new HashMap<>();
 	}
 	
+	
 	public static DisplayBoard getInstance() {
 		if(displayBoard==null) {
 			displayBoard = new DisplayBoard();
