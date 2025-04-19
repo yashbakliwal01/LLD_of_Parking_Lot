@@ -4,6 +4,7 @@ import com.in.enums.ParkingEventType;
 import com.in.enums.ParkingSpotEnum;
 
 public class ParkingEvent {
+
 	private ParkingEventType eventType;
 	private ParkingSpotEnum parkingSpotEnum;
 	

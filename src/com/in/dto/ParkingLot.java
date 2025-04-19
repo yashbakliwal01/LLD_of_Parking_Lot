@@ -87,7 +87,6 @@ public class ParkingLot {
 		this.freeParkingSpots = freeParkingSpots;
 	}
 	
-	
 	public Map<ParkingSpotEnum, List<ParkingSpot>> getOccupiedParkingSpots() {
 		return occupiedParkingSpots;
 	}
