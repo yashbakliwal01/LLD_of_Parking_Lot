@@ -18,14 +18,15 @@ public class ParkingSpotServiceImpl implements ParkingSpotService{
 			ParkingLot.getInstance().getFreeParkingSpots().get(parkingSpotEnum).add(parkingSpot);
 			displayService.update(parkingSpotEnum, 1);
 			return parkingSpot;
+			
 		}catch (InstantiationException e) {
             throw new RuntimeException(e);
-        } catch (IllegalAccessException e) {
-            throw new RuntimeException(e);
-        } catch (InvocationTargetException e) {
-            throw new RuntimeException(e);
-        } catch (NoSuchMethodException e) {
-            throw new RuntimeException(e);
-        }
+            } catch (IllegalAccessException e) {
+            	throw new RuntimeException(e);
+            	} catch (InvocationTargetException e) {
+            		throw new RuntimeException(e);
+            		} catch (NoSuchMethodException e) {
+            			throw new RuntimeException(e);
+            			}
     }
 }
