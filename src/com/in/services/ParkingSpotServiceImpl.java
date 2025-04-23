@@ -12,21 +12,20 @@ public class ParkingSpotServiceImpl implements ParkingSpotService{
 
 	@Override
 	public ParkingSpot create(ParkingSpotEnum parkingSpotEnum, Integer floor) {
-		try {
+		try{
 			DisplayService displayService = new DisplayServiceImpl();
 			ParkingSpot parkingSpot = (ParkingSpot) parkingSpotEnum.getParkingSpot().getConstructor(Integer.class).newInstance(floor);
 			ParkingLot.getInstance().getFreeParkingSpots().get(parkingSpotEnum).add(parkingSpot);
 			displayService.update(parkingSpotEnum, 1);
 			return parkingSpot;
-			
 		}catch (InstantiationException e) {
-            throw new RuntimeException(e);
-            } catch (IllegalAccessException e) {
-            	throw new RuntimeException(e);
-            	} catch (InvocationTargetException e) {
-            		throw new RuntimeException(e);
-            		} catch (NoSuchMethodException e) {
-            			throw new RuntimeException(e);
-            			}
+			throw new RuntimeException(e);
+		}catch (IllegalAccessException e) {
+			throw new RuntimeException(e);
+		}catch (InvocationTargetException e) {
+			throw new RuntimeException(e);
+		}catch (NoSuchMethodException e) {
+			throw new RuntimeException(e);
+		}
     }
 }
