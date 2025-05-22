@@ -1,5 +1,6 @@
 Design a low-level system for a parking lot that satisfies the following requirements:
 
+
 The parking lot should have multiple entrances and exits.
 A global display board should show the number of free parking spots of all types.
 The parking lot should have different types of parking spots (mini, compact, and large) that allow parking for motorbikes, cars, and trucks, respectively.
